@@ -43,14 +43,14 @@
             width: fit-content;
         }
         .scale-item {
-            width: 60px;
+            width: 40px;
             text-align: center;
             font-size: 1.9em;
             font-weight: bold;
         }
 
         .label {
-            font-size: .9em;
+            font-size: 0.9em;
             font-weight: bold;
             margin-bottom: 5px;
         }
@@ -68,7 +68,6 @@
         }
 
         .scale-item {
-            height: 50px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -78,19 +77,19 @@
         }
 
         /* Responsive Design */
-        @media (max-width: 600px) {
+        @media (max-width: 750px) {
             h1 {
                 font-size: 1.2em;
             }
             .label {
-                font-size: 1em;
+                font-size: .5em;
             }
             .scale-item {
-                width: 40px;
-                font-size: 1em;
+                width: 30px;
+                font-size: 0.5em;
             }
-            .scale-item {
-                height: 40px;
+            .scale-container {
+                gap: 3px;
             }
         }
 
@@ -98,15 +97,9 @@
             h1 {
                 font-size: 1em;
             }
-            .label {
-                font-size: 0.9em;
-            }
             .scale-item {
                 width: 30px;
-                font-size: 0.9em;
-            }
-            .scale-item {
-                height: 30px;
+                font-size: 0.5em;
             }
         }
     </style>
