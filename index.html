@@ -4,187 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AGILE Recommendation Scale</title>
-    <style>
-        body {
-            background-color: #1F1E1E;
-            color: #ffffff;
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-
-        .container {
-            text-align: center;
-            max-width: 100%;
-        }
-
-        h1 {
-            margin-bottom: 20px;
-            font-size: 1.5em;
-        }
-
-        .scale-container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .scale-item-container, .arrow {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: fit-content;
-            margin: auto;
-        }
-        .arrow img {
-            width: inherit;
-            max-width: 100%;
-        }
-
-        .scale-item {
-            width: 40px;
-            height: 40px;
-            text-align: center;
-            font-size: 1.9em;
-            font-weight: bold;
-        }
-
-        .label {
-            font-size: 0.9em;
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-
-        .no-label {
-            color: #EC0000;
-        }
-
-        .maybe-label {
-            color: #727200;
-        }
-
-        .yes-label {
-            color: #005B00;
-        }
-
-        .arrow {
-            font-size: 0.8em;
-            font-weight: bold;
-            padding-top: 4px;
-            margin-top: 5px;
-        }
-        .scale-item {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 5px;
-            color: #ffffff;
-            text-decoration: none;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 750px) {
-            h1 {
-                font-size: 1.2em;
-            }
-            .label {
-                font-size: .5em;
-            }
-            .scale-item {
-                width: 30px;
-                height: 30px;
-                font-size: 0.5em;
-            }
-            .scale-container {
-                gap: 3px;
-            }
-        }
-
-        @media (max-width: 400px) {
-            h1 {
-                font-size: 1em;
-            }
-            .scale-item {
-                width: 30px;
-                height: 30px;
-                font-size: 0.5em;
-            }
-        }
-    </style>
 </head>
-<body>
-    <div class="container">
-        <h1>Would you recommend AGILE to a friend or colleague?</h1>
-        <div class="scale-container">
+<body style="background-color: #1F1E1E; color: #ffffff; font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; padding: 20px; box-sizing: border-box;">
+    <div style="text-align: center; max-width: 100%;">
+        <h1 style="margin-bottom: 20px; font-size: 1.5em;">Would you recommend AGILE to a friend or colleague?</h1>
+        <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 10px;">
             <div>
-                <div class="scale-container">
-                    <div class="scale-item-container">
-                        <div class="label no-label">NO</div>
-                        <a href="#" class="scale-item" style="background-color: #EC0000;">0</a>
-                    </div>
-                    <div class="scale-item-container">
-                        <div class="label no-label">NO</div>
-                        <a href="#" class="scale-item" style="background-color: #EC0000;">1</a>
-                    </div>
-                    <div class="scale-item-container">
-                        <div class="label no-label">NO</div>
-                        <a href="#" class="scale-item" style="background-color: #CC1600;">2</a>
-                    </div>
-                    <div class="scale-item-container">
-                        <div class="label no-label">NO</div>
-                        <a href="#" class="scale-item" style="background-color: #CC1800;">3</a>
-                    </div>
-                    <div class="scale-item-container">
-                        <div class="label no-label">NO</div>
-                        <a href="#" class="scale-item" style="background-color: #953300;">4</a>
-                    </div>
+                <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 10px;">
+                    <a href="#" class="scale-item" style="background-color: #EC0000; display: flex; justify-content: center; align-items: center; width: 40px; height: 40px; font-size: 1.9em; font-weight: bold; border-radius: 5px; color: #ffffff; text-decoration: none;">0</a>
+                    <a href="#" class="scale-item" style="background-color: #EC0000; display: flex; justify-content: center; align-items: center; width: 40px; height: 40px; font-size: 1.9em; font-weight: bold; border-radius: 5px; color: #ffffff; text-decoration: none;">1</a>
+                    <a href="#" class="scale-item" style="background-color: #CC1600; display: flex; justify-content: center; align-items: center; width: 40px; height: 40px; font-size: 1.9em; font-weight: bold; border-radius: 5px; color: #ffffff; text-decoration: none;">2</a>
+                    <a href="#" class="scale-item" style="background-color: #CC1800; display: flex; justify-content: center; align-items: center; width: 40px; height: 40px; font-size: 1.9em; font-weight: bold; border-radius: 5px; color: #ffffff; text-decoration: none;">3</a>
+                    <a href="#" class="scale-item" style="background-color: #953300; display: flex; justify-content: center; align-items: center; width: 40px; height: 40px; font-size: 1.9em; font-weight: bold; border-radius: 5px; color: #ffffff; text-decoration: none;">4</a>
                 </div>
-                <div class="arrow-left arrow"><img src="left-arrow.png" alt="">Less Likely</div>
+                <div class="arrow-left arrow" style="font-size: 0.8em; font-weight: bold; padding-top: 4px; margin-top: 5px;"><img src="left-arrow.png" alt=""><br>Less Likely</div>
             </div>
             <div>
-                <div class="scale-container">
-                    <div class="scale-item-container">
-                        <div class="label maybe-label">MAYBE</div>
-                        <a href="#" class="scale-item" style="background-color: #414100;">5</a>
-                    </div>
-                    <div class="scale-item-container">
-                        <div class="label maybe-label">MAYBE</div>
-                        <a href="#" class="scale-item" style="background-color: #414100;">6</a>
-                    </div>
-                    <div class="scale-item-container">
-                        <div class="label maybe-label">MAYBE</div>
-                        <a href="#" class="scale-item" style="background-color: #414100;">7</a>
-                    </div>
+                <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 10px;">
+                    <a href="#" class="scale-item" style="background-color: #414100; display: flex; justify-content: center; align-items: center; width: 40px; height: 40px; font-size: 1.9em; font-weight: bold; border-radius: 5px; color: #ffffff; text-decoration: none;">5</a>
+                    <a href="#" class="scale-item" style="background-color: #414100; display: flex; justify-content: center; align-items: center; width: 40px; height: 40px; font-size: 1.9em; font-weight: bold; border-radius: 5px; color: #ffffff; text-decoration: none;">6</a>
+                    <a href="#" class="scale-item" style="background-color: #414100; display: flex; justify-content: center; align-items: center; width: 40px; height: 40px; font-size: 1.9em; font-weight: bold; border-radius: 5px; color: #ffffff; text-decoration: none;">7</a>
                 </div>
-                <div>
-                    <div class="center-arrow arrow"><img src="center-arrow.png" alt="">Somehow Likely</div>
-                </div>
+                <div class="arrow-center arrow" style="font-size: 0.8em; font-weight: bold; padding-top: 4px; margin-top: 5px;"><img src="center-arrow.png" alt=""><br>Somehow Likely</div>
             </div>
             <div>
-                <div class="scale-container">
-                    <div class="scale-item-container">
-                        <div class="label yes-label">YES</div>
-                        <a href="#" class="scale-item" style="background-color: #085800;">8</a>
-                    </div>
-                    <div class="scale-item-container">
-                        <div class="label yes-label">YES</div>
-                        <a href="#" class="scale-item" style="background-color: #085800;">9</a>
-                    </div>
-                    <div class="scale-item-container">
-                        <div class="label yes-label">YES</div>
-                        <a href="#" class="scale-item" style="background-color: #005B00;">10</a>
-                    </div>
+                <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 10px;">
+                    <a href="#" class="scale-item" style="background-color: #085800; display: flex; justify-content: center; align-items: center; width: 40px; height: 40px; font-size: 1.9em; font-weight: bold; border-radius: 5px; color: #ffffff; text-decoration: none;">8</a>
+                    <a href="#" class="scale-item" style="background-color: #085800; display: flex; justify-content: center; align-items: center; width: 40px; height: 40px; font-size: 1.9em; font-weight: bold; border-radius: 5px; color: #ffffff; text-decoration: none;">9</a>
+                    <a href="#" class="scale-item" style="background-color: #005B00; display: flex; justify-content: center; align-items: center; width: 40px; height: 40px; font-size: 1.9em; font-weight: bold; border-radius: 5px; color: #ffffff; text-decoration: none;">10</a>
                 </div>
-                <div>
-                    <div class="arrow-right arrow"><img src="right-arrow.png" alt="">Very Likely</div>
-                </div>
+                <div class="arrow-right arrow" style="font-size: 0.8em; font-weight: bold; padding-top: 4px; margin-top: 5px;"><img src="right-arrow.png" alt=""><br>Very Likely</div>
             </div>
         </div>
     </div>
