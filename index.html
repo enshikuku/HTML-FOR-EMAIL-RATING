@@ -35,13 +35,18 @@
             gap: 10px;
         }
 
-        .scale-item-container {
+        .scale-item-container, .arrow {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             width: fit-content;
         }
+        .arrow img {
+            width: inherit;
+            max-width: 100%;
+        }
+
         .scale-item {
             width: 40px;
             height: 40px;
@@ -72,7 +77,6 @@
             font-size: 0.8em;
             font-weight: bold;
             padding-top: 4px;
-            border-top: 3px solid white;
             margin-top: 5px;
         }
         .scale-item {
@@ -140,34 +144,34 @@
                         <div class="label no-label">NO</div>
                         <a href="#" class="scale-item" style="background-color: #953300;">4</a>
                     </div>
-                    <div class="scale-item-container">
-                        <div class="label no-label">NO</div>
-                        <a href="#" class="scale-item" style="background-color: #943400;">5</a>
-                    </div>
-                    <div class="scale-item-container">
-                        <div class="label no-label">NO</div>
-                        <a href="#" class="scale-item" style="background-color: #6D4801;">6</a>
-                    </div>
                 </div>
-                <div class="arrow-left arrow">less likely</div>
+                <div class="arrow-left arrow"><img src="left-arrow.png" alt=""><br>Less Likely</div>
             </div>
             <div>
                 <div class="scale-container">
+                    <div class="scale-item-container">
+                        <div class="label maybe-label">MAYBE</div>
+                        <a href="#" class="scale-item" style="background-color: #414100;">5</a>
+                    </div>
+                    <div class="scale-item-container">
+                        <div class="label maybe-label">MAYBE</div>
+                        <a href="#" class="scale-item" style="background-color: #414100;">6</a>
+                    </div>
                     <div class="scale-item-container">
                         <div class="label maybe-label">MAYBE</div>
                         <a href="#" class="scale-item" style="background-color: #414100;">7</a>
                     </div>
-                    <div class="scale-item-container">
-                        <div class="label maybe-label">MAYBE</div>
-                        <a href="#" class="scale-item" style="background-color: #394F00;">8</a>
-                    </div>
-                    </div>
+                </div>
                 <div>
-                    <div class="arrow-middle arrow">maybe</div>
+                    <div class="center-arrow arrow"><img src="center-arrow.png" alt=""><br>Somehow Likely</div>
                 </div>
             </div>
             <div>
                 <div class="scale-container">
+                    <div class="scale-item-container">
+                        <div class="label yes-label">YES</div>
+                        <a href="#" class="scale-item" style="background-color: #085800;">8</a>
+                    </div>
                     <div class="scale-item-container">
                         <div class="label yes-label">YES</div>
                         <a href="#" class="scale-item" style="background-color: #085800;">9</a>
@@ -178,7 +182,7 @@
                     </div>
                 </div>
                 <div>
-                    <div class="arrow-right arrow">very Likely</div>
+                    <div class="arrow-right arrow"><img src="right-arrow.png" alt="">Very Likely</div>
                 </div>
             </div>
         </div>
