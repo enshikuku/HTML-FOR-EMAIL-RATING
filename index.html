@@ -68,6 +68,13 @@
             color: #005B00;
         }
 
+        .arrow {
+            font-size: 0.8em;
+            font-weight: bold;
+            padding-top: 4px;
+            border-top: 3px solid white;
+            margin-top: 5px;
+        }
         .scale-item {
             display: flex;
             justify-content: center;
@@ -111,49 +118,68 @@
     <div class="container">
         <h1>Would you recommend Agile to a friend or colleague?</h1>
         <div class="scale-container">
-            <div class="scale-item-container">
-                <div class="label no-label">NO</div>
-                <a href="#" class="scale-item" style="background-color: #EC0000;">0</a>
+            <div>
+                <div class="scale-container">
+                    <div class="scale-item-container">
+                        <div class="label no-label">NO</div>
+                        <a href="#" class="scale-item" style="background-color: #EC0000;">0</a>
+                    </div>
+                    <div class="scale-item-container">
+                        <div class="label no-label">NO</div>
+                        <a href="#" class="scale-item" style="background-color: #EC0000;">1</a>
+                    </div>
+                    <div class="scale-item-container">
+                        <div class="label no-label">NO</div>
+                        <a href="#" class="scale-item" style="background-color: #CC1600;">2</a>
+                    </div>
+                    <div class="scale-item-container">
+                        <div class="label no-label">NO</div>
+                        <a href="#" class="scale-item" style="background-color: #CC1800;">3</a>
+                    </div>
+                    <div class="scale-item-container">
+                        <div class="label no-label">NO</div>
+                        <a href="#" class="scale-item" style="background-color: #953300;">4</a>
+                    </div>
+                    <div class="scale-item-container">
+                        <div class="label no-label">NO</div>
+                        <a href="#" class="scale-item" style="background-color: #943400;">5</a>
+                    </div>
+                    <div class="scale-item-container">
+                        <div class="label no-label">NO</div>
+                        <a href="#" class="scale-item" style="background-color: #6D4801;">6</a>
+                    </div>
+                </div>
+                <div class="arrow-left arrow">less likely</div>
             </div>
-            <div class="scale-item-container">
-                <div class="label no-label">NO</div>
-                <a href="#" class="scale-item" style="background-color: #EC0000;">1</a>
+            <div>
+                <div class="scale-container">
+                    <div class="scale-item-container">
+                        <div class="label maybe-label">MAYBE</div>
+                        <a href="#" class="scale-item" style="background-color: #414100;">7</a>
+                    </div>
+                    <div class="scale-item-container">
+                        <div class="label maybe-label">MAYBE</div>
+                        <a href="#" class="scale-item" style="background-color: #394F00;">8</a>
+                    </div>
+                    </div>
+                <div>
+                    <div class="arrow-middle arrow">maybe</div>
+                </div>
             </div>
-            <div class="scale-item-container">
-                <div class="label no-label">NO</div>
-                <a href="#" class="scale-item" style="background-color: #CC1600;">2</a>
-            </div>
-            <div class="scale-item-container">
-                <div class="label no-label">NO</div>
-                <a href="#" class="scale-item" style="background-color: #CC1800;">3</a>
-            </div>
-            <div class="scale-item-container">
-                <div class="label no-label">NO</div>
-                <a href="#" class="scale-item" style="background-color: #953300;">4</a>
-            </div>
-            <div class="scale-item-container">
-                <div class="label no-label">NO</div>
-                <a href="#" class="scale-item" style="background-color: #943400;">5</a>
-            </div>
-            <div class="scale-item-container">
-                <div class="label no-label">NO</div>
-                <a href="#" class="scale-item" style="background-color: #6D4801;">6</a>
-            </div>
-            <div class="scale-item-container">
-                <div class="label maybe-label">MAYBE</div>
-                <a href="#" class="scale-item" style="background-color: #414100;">7</a>
-            </div>
-            <div class="scale-item-container">
-                <div class="label maybe-label">MAYBE</div>
-                <a href="#" class="scale-item" style="background-color: #394F00;">8</a>
-            </div>
-            <div class="scale-item-container">
-                <div class="label yes-label">YES</div>
-                <a href="#" class="scale-item" style="background-color: #085800;">9</a>
-            </div>
-            <div class="scale-item-container">
-                <div class="label yes-label">YES</div>
-                <a href="#" class="scale-item" style="background-color: #005B00;">10</a>
+            <div>
+                <div class="scale-container">
+                    <div class="scale-item-container">
+                        <div class="label yes-label">YES</div>
+                        <a href="#" class="scale-item" style="background-color: #085800;">9</a>
+                    </div>
+                    <div class="scale-item-container">
+                        <div class="label yes-label">YES</div>
+                        <a href="#" class="scale-item" style="background-color: #005B00;">10</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="arrow-right arrow">very Likely</div>
+                </div>
             </div>
         </div>
     </div>
